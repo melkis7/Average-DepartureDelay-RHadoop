@@ -50,5 +50,5 @@ reducer <- function() {
 library(hive)
 DFS_dir_remove("/dept-delay-month", recursive = TRUE, henv = hive())
 hive_stream(mapper = mapper, reducer = reducer, 
-            input="/data/airline/", output="/dept-delay-month")
+            input="/data/airline/", output="/dept-delay-month-hive")
 results <- DFS_read_lines("/dept-delay-month/part-r-00000", henv = hive())

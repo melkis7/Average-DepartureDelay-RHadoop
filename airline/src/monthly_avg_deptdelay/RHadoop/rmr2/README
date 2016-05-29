@@ -1,15 +1,15 @@
 Example rmr script to calculate average departure delays per month for each
-airline. This example uses the airline arrival and departure data available
-here:
+airline. 
+
+This example uses the airline arrival and departure data from the link below:
   
-  http://stat-computing.org/dataexpo/2009/the-data.html
+http://stat-computing.org/dataexpo/2009/the-data.html
 
 This example assumes the data has been uploaded to "/data/airline/" in HDFS.
 If you've loaded this data into a different directory in HDFS then change the
 input argument in the call to deptdelay().
 
-This example also assumes you've installed Hadoop, R, and rmr. This code has 
-been tested with CDH3 (Hadoop 0.20.2), R 2.12.2, and rmr 1.0 on Ubuntu 10.10.
+This example also assumes you've installed Hadoop, R, and rmr package. This code has been tested with Hadoop 2.7.2, R 3.0.2 and rmr2 3.3.1 on Ubuntu 14.04.
 
 Running the code:
 
@@ -18,8 +18,8 @@ directories.
     $ export HADOOP_HOME=HADOOP_HOME
     $ export HADOOP_CONF=HADOOP_CONF
 * Execute the script:
-    $ ./deptdelay-rmr.R
+    $ ./deptdelay-rmr2.R
 
-When the script completes output should be in the "/dept-delay-month" 
+When the script completes output should be in the "/dept-delay-month-rmr2" 
 directory in HDFS. 
 
